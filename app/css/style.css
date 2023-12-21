@@ -1,0 +1,129 @@
+html,
+body {
+    font-family: 'Noto Sans', sans-serif;
+    height: 100%;
+    background-color: #e4ebf7;
+    color: #515974;
+}
+
+#side_nav{
+   background: #1b2133;
+   opacity: 1;
+   min-width: 256px;
+   max-width: 256px;
+}
+
+#side_nav_header{
+   padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#side_nav li{
+   padding: 16px 24px;
+   border-left: 2px solid transparent;
+   font-size: 16px;
+   line-height: 1.2;
+   display: flex;
+   align-items: center;
+}
+
+.sidebar_main_label{
+   font-size: 15px;
+}
+
+#side_nav svg{
+   margin-right: 8px;
+}
+
+#side_nav li:hover,
+li.selected {
+    border-left: 2px solid #f45b63;
+    background-color: #0c1224;
+}
+
+#menu_heder{
+   color: #515974;
+   padding: 16px 24px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 14px;
+   line-height: 1.4;
+   cursor: pointer;
+}
+
+.menu-wrapper.expanded .menu-header svg {
+   transform: rotate(180deg);
+}
+
+.menu-wrapper.expanded .menu-content {
+   display: block;
+}
+
+.menu-content {
+   margin: 0;
+   padding: 0;
+   display: none;
+}
+
+.content{
+   min-height: 100vh;
+   width: 100%;
+   background: #e4ebf7;
+   opacity: 1;  
+}
+
+#buvud_logo{
+   height: 18px;
+}
+
+.header-layout {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
+
+.header-layout .header {
+   padding: 24px;
+   display: flex;
+   align-items: center;
+   background-color: #f2f6fc;
+   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header-layout .header .search {
+   margin-left: 16px;
+   border: 0;
+   flex: 1;
+   background-color: transparent;
+}
+
+.header-layout .header .actions {
+   margin-left: 24px;
+   cursor: pointer;
+}
+
+.header-layout .content {
+   overflow-y: auto;
+}
+
+#search_ico{
+   cursor: pointer;
+}
+
+#card_project_activity{
+   background: #e4ebf7;
+   opacity: 1;
+}
+
+#card_project_activity .card-body{
+   background: #f2f6fc;
+   opacity: 1;
+}
+
+#card_project_activity .card-header{
+   background: #f2f6fc;
+   opacity: 1;
+}

@@ -1,0 +1,28 @@
+@media(min-width:260px){
+    .sidebar.closed{
+       margin-left: -200px;
+       min-height: 100vh;
+       z-index: 1;
+       .sidebar-account{
+          height: 0;
+          margin-left: -100px;
+       }
+       .sidebar-account-img{
+          height: 0;
+          margin-left: -100px;
+       }
+       
+       .sidebar-account-profile-name{
+          line-height:0;
+          margin-left: -100px;
+       }
+ 
+       #sidebar_content{
+          margin-left: -460px ;
+       }
+ 
+    }
+    .sidebar{
+       margin-left: 0;
+    }
+ }

@@ -1,0 +1,108 @@
+.sidebar {
+    background: #1b2133;
+    //width:256px;
+    width: 195px;
+    transition: all 0.3s;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            height: 18px;
+        }
+
+        .three-stripes-btn {
+            cursor: pointer;
+            color: $main-color;
+        }
+    }
+
+    &-account {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #0c1224;
+        border-bottom: 1px solid #0c1224;
+        transition: all 0.3s;
+
+        &-img {
+            height: 37px;
+            border-radius: 100%;
+        }
+
+        &-profile-name {
+            margin-left: 24px;
+            font-size: 20px;
+            line-height: 1.36;
+            color: $main-color;
+            font-weight: 400;
+        }
+    }
+
+    li {
+        padding: 16px 10px;
+        border-left: 2px solid transparent;
+        font-size: 12px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &:hover {
+            border-left: 2px solid #f45b63;
+            background-color: #0c1224;
+        }
+
+        a {
+            color: $main-color;
+            display: block;
+        }
+
+        &.selected {
+            border-left: 2px solid #f45b63;
+            background-color: #0c1224;
+        }
+    }
+
+    .sidebar_main_label {
+        font-size: 15px;
+    }
+
+    .sidebar svg {
+        margin-right: 8px;
+    }
+
+    #menu_heder {
+        color: #515974;
+        padding: 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.4;
+        cursor: pointer;
+    }
+
+    .menu-wrapper.expanded .menu-header svg {
+        transform: rotate(180deg);
+    }
+
+    .menu-wrapper.expanded .menu-content {
+        display: block;
+    }
+
+    .menu-content {
+        margin: 0;
+        padding: 0;
+        display: none;
+        border-bottom: 1px solid #0c1224;
+    }
+
+    .content {
+        min-height: 100vh;
+        background: #e4ebf7;
+        opacity: 1;
+    }
+}
